@@ -1,0 +1,17 @@
+{
+  "name": "bengal-tiger-server",
+  "version": "1.0.0",
+  "description": "This is online car hut from Bangladesh.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JOHIRUL ISLAM NISHAT",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.4"
+  }
+}
