@@ -76,7 +76,7 @@ async function run() {
             res.json(result)
         });
 
-        //GET ORDERS
+        //GET ORDERS BY EMAIL
         app.get('/bookingOrders/:email', async (req, res) => {
             // const id = req.params.id;
             // const query = { _id: ObjectId(id) };
@@ -84,6 +84,14 @@ async function run() {
             // console.log(result);
             res.send(result)
         })
+
+        //GET ALL ORDERS API
+        app.get('/bookingOrders', async (req, res) => {
+            const cursor = orders.find({});
+            const result = await cursor.toArray();
+            res.send(result)
+        })
+
 
         //DELETE ORDER API
         app.delete('/deleteOrders/:id', async (req, res) => {
